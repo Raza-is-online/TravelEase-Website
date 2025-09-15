@@ -1,0 +1,22 @@
+name: Deploy to Development
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: development-env
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Example build step
+      - name: Build Project
+        run: npm install && npm run build
+
+      # Example deploy step
+      - name: Deploy to Development Server
+        run: echo "Deploying to Development Environment.... (/)"
