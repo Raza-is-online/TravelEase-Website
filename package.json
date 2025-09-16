@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Hello, This is a course project. DevOps Summer 2025. Made with <3 By Ahmed Raza L1F19BSSE0178",
   "scripts": {
-    "start": "parcel serve home.html",
-    "build": "parcel build home.html --dist-dir build",
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html --dist-dir build",
     "lint:html": "htmlhint '**/*.html'",
     "lint:css": "stylelint '**/*.css'",
     "lint": "npm run lint:html && npm run lint:css"
