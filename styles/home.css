@@ -35,7 +35,7 @@ nav a {
 }
 
 .hero .btn {
-  background: #ff9800;
+  background: #116821;
   padding: 0.75rem 1.5rem;
   color: #fff;
   text-decoration: none;
@@ -71,4 +71,12 @@ footer {
   padding: 1rem;
   background: #004d40;
   color: white;
+}
+
+.destinations img {
+  width: 100%;          /* Make image take full width of its container */
+  height: 200px;        /* Fixed height */
+  object-fit: cover;    /* Crop the image nicely without stretching */
+  border-radius: 8px;   /* Smooth rounded corners */
+  display: block;
 }
