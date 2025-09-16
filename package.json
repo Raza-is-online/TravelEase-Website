@@ -1,0 +1,12 @@
+{
+  "name": "travelease",
+  "version": "1.0.0",
+  "description": "Hello, This is a course project.DevOps Summer 2025. Made with <3 By Ahmed Raza L1F19BSSE0178",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
