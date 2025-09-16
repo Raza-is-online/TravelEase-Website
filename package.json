@@ -1,10 +1,19 @@
 {
-  "name": "travelease",
+  "name": "travelease-website",
   "version": "1.0.0",
-  "description": "Hello, This is a course project.DevOps Summer 2025. Made with <3 By Ahmed Raza L1F19BSSE0178",
-  "main": "index.js",
+  "description": "Hello, This is a course project. DevOps Summer 2025. Made with <3 By Ahmed Raza L1F19BSSE0178",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html --dist-dir dist",
+    "lint:html": "htmlhint '**/*.html'",
+    "lint:css": "stylelint '**/*.css'",
+    "lint": "npm run lint:html && npm run lint:css"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0"
   },
   "keywords": [],
   "author": "",
