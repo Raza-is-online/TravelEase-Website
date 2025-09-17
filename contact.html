@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelEase - Contact Us</title>
+  <link rel="stylesheet" href="./styles/home.css" />
+  <style>
+    /* Extra contact page specific styles */
+    .contact-info, .contact-form, .map, .office-hours {
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: #116821;
+      color: #fff;
+      border: none;
+      padding: 0.8rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background: #0d4f18;
+    }
+
+    .social-links a {
+      margin: 0 0.5rem;
+      color: #004d40;
+      font-weight: bold;
+    }
+
+    .map img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>TravelEase</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="trip-planner.html">Trip Planner</a></li>
+        <li><a href="stories.html">Travel Stories</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Info -->
+  <section class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> contact@travelease.pk</p>
+    <p><strong>WhatsApp:</strong> +92 300 1234567</p>
+    <p><strong>Office Address:</strong> TravelEase Office, Main Bazar, Skardu, Gilgit-Baltistan</p>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="text" id="subject" placeholder="Subject" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Office Hours -->
+  <section class="office-hours">
+    <h2>Office Hours</h2>
+    <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+    <p>Saturday: 10:00 AM – 4:00 PM</p>
+    <p>Sunday: Closed</p>
+  </section>
+
+  <!-- Social Links -->
+  <section class="social-links">
+    <h2>Follow Us</h2>
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="https://youtube.com" target="_blank">YouTube</a>
+  </section>
+
+  <!-- Map -->
+  <section class="map">
+    <h2>Our Location</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Skardu_city_aerial_view.jpg" alt="Map of Skardu" />
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TravelEase | Promoting Tourism in Northern Pakistan</p>
+  </footer>
+
+  <!-- Client-side Validation Script -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !subject || !message) {
+        alert("All fields are required!");
+        return;
+      }
+
+      if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+
+      alert("Thank you, " + name + "! Your message has been submitted.");
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+</body>
+</html>
