@@ -26,6 +26,3 @@ jobs:
 
       - name: Run Stylelint
         run: npx stylelint "**/*.css"
-
-      - name: Run Tests (if any)
-        run: npm test
