@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #004d40;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  background: url("https://images.pexels.com/photos/33913875/pexels-photo-33913875.jpeg") no-repeat center center/cover;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.hero .btn {
+  background: #116821;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.featured {
+  padding: 2rem;
+  background: #fff;
+}
+
+.destinations {
+  display: flex;
+  gap: 1rem;
+}
+
+.destinations article {
+  flex: 1;
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.reviews {
+  padding: 2rem;
+  background: #e0f7fa;
+  font-style: italic;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #004d40;
+  color: white;
+}
+
+.destinations img {
+  width: 100%;          /* Make image take full width of its container */
+  height: 200px;        /* Fixed height */
+  object-fit: cover;    /* Crop the image nicely without stretching */
+  border-radius: 8px;   /* Smooth rounded corners */
+  display: block;
+}
