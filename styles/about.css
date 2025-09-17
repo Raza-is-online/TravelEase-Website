@@ -1,0 +1,109 @@
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1{
+  margin-top: 0;
+  color: #fff;
+}
+
+h2, h3 {
+  margin-top: 0;
+  color: #116821;
+}
+
+a {
+  text-decoration: none;
+  color: #116821; /* Accent green for links */
+}
+
+/* Header */
+header {
+  background: #004d40; /* Dark green same as home */
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Section Layouts */
+section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px;
+}
+
+/* Founders & Team */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.team-members article {
+  text-align: center;
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.team-members img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #116821; /* Accent green border */
+}
+
+.team-members h3 {
+  margin-bottom: 0.3rem;
+  color: #116821; /* Accent green names */
+}
+
+.team-members p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #004d40; /* Dark green same as home */
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
